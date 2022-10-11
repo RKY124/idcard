@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Create Your Card Here
+  form(method="POST" action="/card")
+    label(for="firstName") First:
+    input(type="text" name="firstName" id="firstName")
+
+    label(for="lastName") Last:
+    input(type="text" name="lastName" id="lastName")
+
+    label
